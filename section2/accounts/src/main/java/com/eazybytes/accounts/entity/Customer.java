@@ -1,6 +1,6 @@
 package com.eazybytes.accounts.entity;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,9 +10,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 public class Customer extends BaseEntity{
-    private Long id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long customer_id;
     private String name;
     private String email;
+    @Column(name = "mobile_Number")
     private String mobileNumber;
 
 }
