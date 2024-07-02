@@ -1,7 +1,7 @@
-# microservices_SpringBoot
+# Microservices_SpringBoot
 
-# Banking App using Microservices using Java Spring Boot
+* Banking App using Microservices using Java Spring Boot
 
-# Needs to know some important topics 
+* Needs to know some important topics 
     - @ControllerAdvice - annotation: 
-            this annotation usded for Custome Exception class like globalExceptionHandler, is important to intercept the erros fora ny controller class 
+            this annotation used for Custom Exception class like globalExceptionHandler, is important to intercept the errors fora ny controller class 
