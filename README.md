@@ -21,5 +21,11 @@
   
 # Swagger UI - Accounts RESTAPI
 *  URL for RESTapi => http://localhost:8080/swagger-ui/index.html
+*  Well documented Swagger UI from Springboot application using OPEN API dependency
+*  
+<img src="sw1.png" alt="image"/>
+<img src="sw2.png" alt="image"/>
+<img src="sw3.png" alt="image"/>
+<img src="sw4.png" alt="image"/>
+<img src="sw5.png" alt="image"/>
 
-<img src="Accounts_RESTAPI_Swagger.png" alt="image"/>
