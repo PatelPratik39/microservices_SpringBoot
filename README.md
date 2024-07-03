@@ -8,5 +8,6 @@
 
   
 # Swagger UI - Accounts RESTAPI
+*  URL for RESTapi => http://localhost:8080/swagger-ui/index.html
 
     <img src="Accounts_RESTAPI_Swagger.png" alt=image/>
