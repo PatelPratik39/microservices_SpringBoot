@@ -92,4 +92,21 @@ public class AccountServiceImpl implements AccountService {
         }
         return isUpdated;
     }
+    /*
+    For Delete Account using MobileNumber, first I need to fetch the customer data from Customer Entity class
+        with mobileNUmber as parameter.
+     - Check any runtime exception like mobile number, customer and account number is present or not
+     -
+
+     */
+
+    @Override
+    public boolean deleteAccount ( String mobileNumber ) {
+       Customer customer = customerRepository.findByMobileNumber(mobileNumber).orElseThrow(
+               () -> new ResourceNotFoundException("Customer", "mobileNumber", mobileNumber)
+       );
+       accountRepository.deleteByCustomerId(customer.getCustomerId());
+       customerRepository.deleteById(customer.getCustomerId());
+        return true;
+    }
 }

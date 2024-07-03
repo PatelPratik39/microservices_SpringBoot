@@ -12,4 +12,7 @@ public interface AccountService {
 
 //    update Account Details
     boolean updateAccount(CustomerDto customerDto);
+
+//    Delete Account Details
+    boolean deleteAccount(String mobileNumber);
 }
