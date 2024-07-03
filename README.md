@@ -9,4 +9,4 @@
   
 # Swagger UI - Accounts RESTAPI
 
-    <img src="Accounts_RESTAPI_Swagger.png" alt=image/>
+<img src="Accounts_RESTAPI_Swagger.png" alt="image"/>
