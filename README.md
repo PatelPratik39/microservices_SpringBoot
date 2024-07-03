@@ -1,5 +1,7 @@
 # Microservices_SpringBoot
 
+# This file exhibits snapshots about the project details and Spring in-built dependencies are used
+
 * Banking App using Microservices using Java Spring Boot
 
 * Needs to know some important topics
