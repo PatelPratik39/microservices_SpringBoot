@@ -2,9 +2,7 @@
 
 * Banking App using Microservices using Java Spring Boot
 
-* Needs to know some important topics 
-    - @ControllerAdvice - annotation: 
-            this annotation used for Custom Exception class like globalExceptionHandler, is important to intercept the errors fora ny controller class 
+* Needs to know some important topics
       - @ControllerAdvice -
         -   Purpose: The @ControllerAdvice annotation is a specialization of the @Component annotation. It is used to define global exception handlers, model attributes, 
                     and request/response body advice that will be applied across multiple controllers.
