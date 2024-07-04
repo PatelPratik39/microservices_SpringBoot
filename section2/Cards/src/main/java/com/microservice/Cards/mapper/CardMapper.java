@@ -2,9 +2,6 @@ package com.microservice.Cards.mapper;
 
 import com.microservice.Cards.dto.CardsDto;
 import com.microservice.Cards.entity.Cards;
-import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.AllArgsConstructor;
-import lombok.Data;
 
 
 public class CardMapper {
