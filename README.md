@@ -2,7 +2,7 @@
 
 # This file exhibits snapshots about the project details and Spring boot in-built dependencies are used
 
-# Flow of  each microservice 
+# Flow of each microservice 
 '''
 +------------------------------------------------------+
 |                      Controller                      |
