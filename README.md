@@ -1,6 +1,6 @@
 # Microservices_SpringBoot
 
-# This file exhibits snapshots about the project details and Spring boot in-built dependencies are used
+# This file exhibits snapshots of the project details and Spring boot in-built dependencies are used
 
 # Flow of each microservice 
 '''
