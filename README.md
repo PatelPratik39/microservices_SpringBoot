@@ -2,11 +2,76 @@
 
 # This file exhibits snapshots about the project details and Spring boot in-built dependencies are used
 
+# Flow of  each microservice 
+'''
++------------------------------------------------------+
+|                      Controller                      |
+|       (Handles HTTP requests and responses)          |
++------------------------------------------------------+
+|
+v
++------------------------------------------------------+
+|                      Service                         |
+|        (Business logic and interaction with          |
+|           repositories)                              |
++------------------------------------------------------+
+|
+v
++------------------------------------------------------+
+|                Service Implementations               |
+|         (Implementations of service interfaces)      |
++------------------------------------------------------+
+|
+v
++------------------------------------------------------+
+|                     Repository                       |
+|       (Direct interaction with the database)         |
++------------------------------------------------------+
+|
+v
++------------------------------------------------------+
+|                       Entity                         |
+|          (Database table representation)             |
++------------------------------------------------------+
+|
+v
++------------------------------------------------------+
+|                       DTO                            |
+|    (Data Transfer Objects for transferring data)     |
++------------------------------------------------------+
+|
+v
++------------------------------------------------------+
+|                      Mapper                          |
+|      (Convert entities to DTOs and vice versa)       |
++------------------------------------------------------+
+|
+v
++------------------------------------------------------+
+|                      Audit                           |
+|        (Track changes to entities using              |
+|           JPA EntityListeners)                       |
++------------------------------------------------------+
+|
+v
++------------------------------------------------------+
+|                    Exception                         |
+|          (Custom exception handling)                 |
++------------------------------------------------------+
+|
+v
++------------------------------------------------------+
+|                    Constants                         |
+|          (Constant values used in application)       |
++------------------------------------------------------+
+
+'''
+
 * Banking App using Microservices using Java Spring Boot
 
 * Needs to know some important topics
       - @ControllerAdvice -
-        -   Purpose: The @ControllerAdvice annotation is a specialization of the @Component annotation. It is used to define global exception handlers, model attributes, 
+        - Purpose: The @ControllerAdvice annotation is a specialization of the @Component annotation. It is used to define global exception handlers, model attributes, 
                     and request/response body advice that will be applied across multiple controllers.
         - Usage: It is used to handle exceptions, bind data to the model, or customize request/response handling for all controllers.
     - @Validated - 
