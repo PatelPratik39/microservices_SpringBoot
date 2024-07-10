@@ -85,6 +85,8 @@ v
       - Purpose: The @EntityListeners annotation is used in JPA (Java Persistence API) to specify callback listener classes that will receive lifecycle events for the entity. 
                     These events can include pre-persist, post-persist, pre-update, post-update, pre-remove, post-remove, and post-load.
       - Usage: It is used on entity classes to specify listener classes that handle entity lifecycle events.
+     
+ <img src="ss6.png" alt="image"/>     
   
 # Swagger UI - Accounts RESTAPI
 *  URL for Account RESTapi => http://localhost:8080/swagger-ui/index.html
