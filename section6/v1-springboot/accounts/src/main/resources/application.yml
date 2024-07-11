@@ -15,8 +15,11 @@ spring:
     hibernate:
       ddl-auto: update
       show-sql: true
+  profiles:
+    active: qa
+
 build:
-  version: "1.0"
+  version: "3.0"
 
 accounts:
   message: "Welcome to the Prats Banking App using Java Spring boot microservice"
