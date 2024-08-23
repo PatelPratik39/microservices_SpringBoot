@@ -1,4 +1,3 @@
-
 build:
   version: "1.0"
 
@@ -8,5 +7,5 @@ accounts:
     name: "Mangoo MotiJi - Product Owner"
     email: "mangoo@email.com"
   callSupport:
-    - (123)4567890
-    - (999)8883434
+    - "(123)4567890"
+    - "(999)8883434"
