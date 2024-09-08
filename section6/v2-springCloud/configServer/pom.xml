@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.3.2</version>
+		<version>3.3.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mybank</groupId>
 	<artifactId>configServer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>configServer</name>
-	<description>Config Server for myBank microservices</description>
+	<description>configServer for myBank microservices</description>
 	<url/>
 	<licenses>
 		<license/>

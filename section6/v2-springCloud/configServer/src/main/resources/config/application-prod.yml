@@ -1,5 +1,9 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
 build:
-  version: "3.0"
+  version: "1.0"
 
 accounts:
   message: "Welcome to the Prats Banking App using Java Spring boot microservice - PROD APIs"
@@ -7,5 +11,5 @@ accounts:
     name: "Mangoo MotiJi - Product Owner"
     email: "mangoo@email.com"
   callSupport:
-    - "(123)4567890"
-    - "(999)8883434"
+    - (123)4567890
+    - (999)8883434
