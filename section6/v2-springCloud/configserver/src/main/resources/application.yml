@@ -2,13 +2,17 @@ spring:
   application:
     name: "configserver"
   profiles:
-    active: native
+    active: git
   cloud:
     config:
       server:
-        native:
-#          search-locations: "classpath:/config"
-          search-locations: "file:////Users//pratikpatel//Documents//SpringBoot_Projects//microservices_SpringBoot//section6//v2-springCloud//configserver//src//main//resources//config"
+        git:
+          uri: "https://github.com/PatelPratik39/microservices_SpringBoot.git"
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+          search-paths: "section6/v2-springCloud/configserver/src/main/resources/config"
 server:
   port: 8071
 
