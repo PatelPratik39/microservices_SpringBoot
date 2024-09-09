@@ -1,0 +1,12 @@
+
+build:
+  version: "3.0"
+
+cards:
+  message: "Welcome to my Bank loans related local APIs "
+  contactDetails:
+    name: "Chucha Singh - Developer"
+    email: "chucha@eazybank.com"
+  callSupport:
+    - (452) 456-2176
+    - (546) 764-8934
