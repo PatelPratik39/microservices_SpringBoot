@@ -1,11 +1,7 @@
-spring:
-  config:
-    activate:
-      on-profile: prod
+
 build:
   version: "1.0"
-
-accounts:
+cards:
   message: "Welcome to the Prats Banking App using Java Spring boot microservice - PROD APIs"
   contactDetails:
     name: "Mangoo MotiJi - Product Owner"

@@ -1,11 +1,15 @@
 server:
   port: 8081
 spring:
+  application:
+    name: accounts
+  profiles:
+    active: prod
   datasource:
     url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver
     username: sa
-    password:
+    password: ''
     platform: h2
   h2:
     console:
@@ -15,17 +19,7 @@ spring:
     hibernate:
       ddl-auto: update
       show-sql: true
-  profiles:
-    active: qa
-
+  config:
+    import: optional:configserver:http://localhost:8071/
 build:
-  version: "3.0"
-
-accounts:
-  message: "Welcome to the Prats Banking App using Java Spring boot microservice"
-  contactDetails:
-    name: "Prats - Developer"
-    email: "prats@email.com"
-  callSupport:
-    - (123)4567890
-    - (999)8883434
+  version: 1.0.0

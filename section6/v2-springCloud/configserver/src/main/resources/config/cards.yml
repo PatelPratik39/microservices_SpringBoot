@@ -1,7 +1,6 @@
 
 build:
   version: "3.0"
-
 cards:
   message: "Welcome to my Bank loans related local APIs "
   contactDetails:

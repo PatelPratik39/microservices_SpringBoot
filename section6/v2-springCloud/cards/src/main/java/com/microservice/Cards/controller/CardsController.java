@@ -33,12 +33,11 @@ import org.springframework.web.bind.annotation.*;
 @Validated
 public class CardsController {
 
-    @Autowired
     private CardsService cardsService;
 
-    public CardsController ( CardsService cardsService ) {
-        this.cardsService = cardsService;
-    }
+//    public CardsController ( CardsService cardsService ) {
+//        this.cardsService = cardsService;
+//    }
 
     @Value("${build.version}")
     private String buildVersion;
@@ -46,6 +45,7 @@ public class CardsController {
     @Autowired
     private Environment environment;
 
+    @Autowired
     private CardsContactInfoDto cardsContactInfoDto;
 
     //    Create REST API for createCard

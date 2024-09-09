@@ -1,7 +1,6 @@
 
 build:
   version: "1.0"
-
 accounts:
   message: "Welcome to the Prats Banking App using Java Spring boot microservice - PROD APIs"
   contactDetails:

@@ -15,7 +15,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
-import lombok.AllArgsConstructor;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -26,7 +25,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import java.awt.*;
 
 @Tag(
         name = "CRUD REST API for Accounts of Bank App to CREATE, UPDATE, FETCH AND DELETE account details"
@@ -47,10 +45,8 @@ public class AccountsController {
     @Autowired
     private AccountsContactInfoDto accountsContactInfoDto;
 
-    @Autowired
-    public AccountsController ( AccountService accountService ) {
-        this.accountService = accountService;
-    }
+//    @Autowired
+//    private AccountsContactInfoDto accountsContactInfoDto;
 
 
     @Operation(
@@ -234,10 +230,9 @@ public class AccountsController {
     )
     @GetMapping("/contact-info")
     public ResponseEntity<AccountsContactInfoDto> getContactInfo(){
+
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(accountsContactInfoDto);
     }
-
-
 }

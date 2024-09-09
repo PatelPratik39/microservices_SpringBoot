@@ -13,7 +13,6 @@ public interface AccountRepository extends JpaRepository< Accounts, Long > {
 
     Optional< Accounts > findByCustomerId(Long customerId);
 
-
 //    custom Abstract method used so i need to annotate this customer abstract method with
     @Transactional
     @Modifying
