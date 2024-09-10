@@ -13,6 +13,8 @@ spring:
           clone-on-start: true
           force-pull: true
           search-paths: "section6/v2-springCloud/configserver/src/main/resources/config"
+encrypt:
+  key: "94AGXER3CU8ECNAKEKDC00L4F"
 server:
   port: 8071
 

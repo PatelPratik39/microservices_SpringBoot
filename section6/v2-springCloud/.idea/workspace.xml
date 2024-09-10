@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b22bf2b5-44ca-46ca-b4b5-3bde9b0a7db9" name="Changes" comment="Spring cloud configuration with all microservices">
+    <list default="true" id="b22bf2b5-44ca-46ca-b4b5-3bde9b0a7db9" name="Changes" comment="SpringCloud - accessing all the config files from git repo and config path">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/AccountsContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/AccountsContactInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/microservice/Cards/dto/CardsContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/microservice/Cards/dto/CardsContactInfoDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/microservice/Loans/dto/LoansContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/microservice/Loans/dto/LoansContactInfoDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +54,7 @@
       <recent name="$PROJECT_DIR$/configServer/src/main/resources/config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConfigServerApplication">
+  <component name="RunManager" selected="Application.AccountsApplication">
     <configuration name="AccountsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.eazybytes.accounts.AccountsApplication" />
       <module name="accounts" />
@@ -102,8 +110,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConfigServerApplication" />
         <item itemvalue="Application.AccountsApplication" />
+        <item itemvalue="Application.ConfigServerApplication" />
         <item itemvalue="Application.LoansApplication" />
         <item itemvalue="Application.CardsApplication" />
       </list>
@@ -142,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725907033623</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="SpringCloud - accessing all the config files from git repo and config path">
+      <option name="closed" value="true" />
+      <created>1725925192893</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725925192893</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -151,6 +167,7 @@
     <MESSAGE value="Spring clou configServer" />
     <MESSAGE value="Spring cloud configServer configured perfectly" />
     <MESSAGE value="Spring cloud configuration with all microservices" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring cloud configuration with all microservices" />
+    <MESSAGE value="SpringCloud - accessing all the config files from git repo and config path" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringCloud - accessing all the config files from git repo and config path" />
   </component>
 </project>

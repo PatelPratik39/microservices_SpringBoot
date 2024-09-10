@@ -23,3 +23,9 @@ spring:
     import: optional:configserver:http://localhost:8071/
 build:
   version: 1.0.0
+#  Actuator set up
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
