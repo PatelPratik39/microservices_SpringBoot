@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b22bf2b5-44ca-46ca-b4b5-3bde9b0a7db9" name="Changes" comment="verbose changes" />
+    <list default="true" id="b22bf2b5-44ca-46ca-b4b5-3bde9b0a7db9" name="Changes" comment="verbose changes c" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725937964301</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="verbose changes c">
+      <option name="closed" value="true" />
+      <created>1725938149646</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1725938149646</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,6 +224,7 @@
     <MESSAGE value="Actuator set up" />
     <MESSAGE value="Change JDK version to 17" />
     <MESSAGE value="verbose changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="verbose changes" />
+    <MESSAGE value="verbose changes c" />
+    <option name="LAST_COMMIT_MESSAGE" value="verbose changes c" />
   </component>
 </project>
