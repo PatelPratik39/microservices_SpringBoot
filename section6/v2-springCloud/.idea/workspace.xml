@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b22bf2b5-44ca-46ca-b4b5-3bde9b0a7db9" name="Changes" comment="Change JDK version to 17">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/controller/AccountsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/AccountsContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/AccountsContactInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-qa.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-qa.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-qa.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-qa.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/loans.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans.yml" afterDir="false" />
+    <list default="true" id="b22bf2b5-44ca-46ca-b4b5-3bde9b0a7db9" name="Changes" comment="verbose changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +49,7 @@
       <recent name="$PROJECT_DIR$/configServer/src/main/resources/config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LoansApplication">
+  <component name="RunManager" selected="Application.CardsApplication">
     <configuration name="AccountsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -188,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725934464582</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="verbose changes">
+      <option name="closed" value="true" />
+      <created>1725936112511</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725936112511</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,6 +209,7 @@
     <MESSAGE value="SpringCloud - accessing all the config files from git repo and config path" />
     <MESSAGE value="Actuator set up" />
     <MESSAGE value="Change JDK version to 17" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change JDK version to 17" />
+    <MESSAGE value="verbose changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="verbose changes" />
   </component>
 </project>
