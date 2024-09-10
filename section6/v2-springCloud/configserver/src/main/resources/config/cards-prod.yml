@@ -6,6 +6,6 @@ cards:
   contactDetails:
     name: "Mangoo MotiJi - Product Owner"
     email: "mangoo@email.com"
-  onCallSupport:
-    - "(123)4567890"
-    - "(999)8883434"
+  callSupport:
+    - (123)4567890
+    - (999)8883434

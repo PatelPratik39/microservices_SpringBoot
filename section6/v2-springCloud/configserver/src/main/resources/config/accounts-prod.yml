@@ -1,6 +1,6 @@
 
 accounts:
-  message: "Welcome to the Prats Banking App using Java Spring boot microservice - PROD APIs"
+  message: "Welcome to the Prats Banking App using Java Spring boot microservice - PRODUCTION APIs"
   contactDetails:
     name: "Mangoo MotiJi - Product Owner"
     email: "{cipher}aa1afe5e25cd340a7020dbcba8174c4ff805820354f68fe124a2b99df6e80cab1b245e5c43df56fd1cf6cfb0b41aecec"
