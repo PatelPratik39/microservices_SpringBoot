@@ -5,6 +5,6 @@ accounts:
   contactDetails:
     name: "Prats - Developer"
     email: "prats@email.com"
-  callSupport:
-    - (123)4567890
-    - (999)8883434
+  onCallSupport:
+    - "(123)4567890"
+    - "(999)8883434"

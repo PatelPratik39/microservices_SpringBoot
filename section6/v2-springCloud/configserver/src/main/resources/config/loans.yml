@@ -6,6 +6,6 @@ loans:
   contactDetails:
     name: "Chucha Singh - Developer"
     email: "chucha@eazybank.com"
-  callSupport:
-    - (452) 456-2176
-    - (546) 764-8934
+  onCallSupport:
+    - "(452) 456-2176"
+    - "(546) 764-8934"

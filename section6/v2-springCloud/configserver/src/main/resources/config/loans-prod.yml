@@ -6,6 +6,6 @@ loans:
   contactDetails:
     name: "Mangoo MotiJi - Product Owner"
     email: "mangoo@email.com"
-  callSupport:
-    - (123)4567890
-    - (999)8883434
+  onCallSupport:
+    - "(123)4567890"
+    - "(999)8883434"

@@ -7,6 +7,6 @@ loans:
   contactDetails:
     name: "Lallu Lal - QA Lead"
     email: "lallu@email.com"
-  callSupport:
-    - (333)333-1234
-    - (999)777-3434
+  onCallSupport:
+    - "(333)333-1234"
+    - "(999)777-3434"

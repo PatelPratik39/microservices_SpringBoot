@@ -45,8 +45,6 @@ public class AccountsController {
     @Autowired
     private AccountsContactInfoDto accountsContactInfoDto;
 
-//    @Autowired
-//    private AccountsContactInfoDto accountsContactInfoDto;
 
 
     @Operation(
