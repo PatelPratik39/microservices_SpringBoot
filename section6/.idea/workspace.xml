@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63db4be5-0cad-40af-b997-ac469ae5093a" name="Changes" comment="rabbitMQ with Liveness and readiness">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_11_24,_2_10 PM_[Changes]/shelved.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2-springCloud/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2-springCloud/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/v2-springCloud/configserver/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="63db4be5-0cad-40af-b997-ac469ae5093a" name="Changes" comment="docker-compose file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -129,13 +127,30 @@
       <option name="project" value="LOCAL" />
       <updated>1726077071223</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="docker-compose file">
+      <option name="closed" value="true" />
+      <created>1726082222465</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726082222465</updated>
+    </task>
+    <task id="LOCAL-00004" summary="docker-compose file">
+      <option name="closed" value="true" />
+      <created>1726082269587</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726082269587</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="new docker-compose file added" />
     <MESSAGE value="rabbitMQ with Liveness and readiness" />
-    <option name="LAST_COMMIT_MESSAGE" value="rabbitMQ with Liveness and readiness" />
+    <MESSAGE value="docker-compose file" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker-compose file" />
   </component>
 </project>
