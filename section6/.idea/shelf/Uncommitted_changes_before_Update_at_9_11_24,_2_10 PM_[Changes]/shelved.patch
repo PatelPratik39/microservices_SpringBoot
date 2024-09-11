@@ -1,0 +1,252 @@
+Index: v2-springCloud/accounts/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n\txsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd\">\n\t<modelVersion>4.0.0</modelVersion>\n\t<parent>\n\t\t<groupId>org.springframework.boot</groupId>\n\t\t<artifactId>spring-boot-starter-parent</artifactId>\n\t\t<version>3.3.1</version>\n\t\t<relativePath/> <!-- lookup parent from repository -->\n\t</parent>\n\t<groupId>com.eazybytes</groupId>\n\t<artifactId>accounts</artifactId>\n\t<version>0.0.1-SNAPSHOT</version>\n\t<packaging>jar</packaging>\n\t<name>accounts</name>\n\t<description>Microservice Project using SpringBoot</description>\n\t<url/>\n\t<licenses>\n\t\t<license/>\n\t</licenses>\n\t<developers>\n\t\t<developer/>\n\t</developers>\n\t<scm>\n\t\t<connection/>\n\t\t<developerConnection/>\n\t\t<tag/>\n\t\t<url/>\n\t</scm>\n\t<properties>\n\t\t<java.version>17</java.version>\n\t\t<spring-cloud.version>2023.0.3</spring-cloud.version>\n\t</properties>\n\t<dependencies>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t<artifactId>spring-boot-starter-actuator</artifactId>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t<artifactId>spring-boot-starter-data-jpa</artifactId>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t<artifactId>spring-boot-starter-validation</artifactId>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t<artifactId>spring-boot-starter-web</artifactId>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.cloud</groupId>\n\t\t\t<artifactId>spring-cloud-starter-config</artifactId>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t<artifactId>spring-boot-starter-actuator</artifactId>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.cloud</groupId>\n\t\t\t<artifactId>spring-cloud-starter-bus-amqp</artifactId> <!-- or spring-cloud-starter-bus-kafka -->\n\t\t</dependency>\n\n\n\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t<artifactId>spring-boot-devtools</artifactId>\n\t\t\t<scope>runtime</scope>\n\t\t\t<optional>true</optional>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>com.h2database</groupId>\n\t\t\t<artifactId>h2</artifactId>\n\t\t\t<scope>runtime</scope>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.projectlombok</groupId>\n\t\t\t<artifactId>lombok</artifactId>\n\t\t\t<optional>true</optional>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t<artifactId>spring-boot-starter-test</artifactId>\n\t\t\t<scope>test</scope>\n\t\t</dependency>\n<!--\t\tSwagger UI Dependency to validate and share RESTApis for this project-->\n\t\t<dependency>\n\t\t\t<groupId>org.springdoc</groupId>\n\t\t\t<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>\n\t\t\t<version>2.6.0</version>\n\t\t</dependency>\n\n\t</dependencies>\n\t<dependencyManagement>\n\t\t<dependencies>\n\t\t\t<dependency>\n\t\t\t\t<groupId>org.springframework.cloud</groupId>\n\t\t\t\t<artifactId>spring-cloud-dependencies</artifactId>\n\t\t\t\t<version>${spring-cloud.version}</version>\n\t\t\t\t<type>pom</type>\n\t\t\t\t<scope>import</scope>\n\t\t\t</dependency>\n\t\t</dependencies>\n\t</dependencyManagement>\n\n\t<build>\n\t\t<plugins>\n\t\t\t<plugin>\n\t\t\t\t<groupId>com.google.cloud.tools</groupId>\n\t\t\t\t<artifactId>jib-maven-plugin</artifactId>\n\t\t\t\t<version>3.4.3</version>\n\t\t\t\t<configuration>\n\t\t\t\t\t<to>\n\t\t\t\t\t\t<image>${project.artifactId}:s6</image>\n\t\t\t\t\t</to>\n\t\t\t\t</configuration>\n\t\t\t</plugin>\n\t\t</plugins>\n\t</build>\n\n</project>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/v2-springCloud/accounts/pom.xml b/v2-springCloud/accounts/pom.xml
+--- a/v2-springCloud/accounts/pom.xml	(revision 57168f890e5c35c31e446b68ed642529d4b7dc08)
++++ b/v2-springCloud/accounts/pom.xml	(date 1726079372559)
+@@ -53,10 +53,6 @@
+ 			<artifactId>spring-cloud-starter-config</artifactId>
+ 		</dependency>
+ 		<dependency>
+-			<groupId>org.springframework.boot</groupId>
+-			<artifactId>spring-boot-starter-actuator</artifactId>
+-		</dependency>
+-		<dependency>
+ 			<groupId>org.springframework.cloud</groupId>
+ 			<artifactId>spring-cloud-starter-bus-amqp</artifactId> <!-- or spring-cloud-starter-bus-kafka -->
+ 		</dependency>
+Index: v2-springCloud/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"b22bf2b5-44ca-46ca-b4b5-3bde9b0a7db9\" name=\"Changes\" comment=\"Webhook from github for production ready scenario\">\n      <change beforePath=\"$PROJECT_DIR$/../.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/docker-compose/default/docker-compose.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/docker-compose/default/docker-compose.yml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/../..\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 6\n}</component>\n  <component name=\"ProjectId\" id=\"2lnCw1n5P0bMepJv4y8NwPRBgem\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\n    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;Application.AccountsApplication.executor&quot;: &quot;Run&quot;,\n    &quot;Application.CardsApplication.executor&quot;: &quot;Run&quot;,\n    &quot;Application.ConfigServerApplication.executor&quot;: &quot;Run&quot;,\n    &quot;Application.LoansApplication.executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Users/pratikpatel/Documents/SpringBoot_Projects/microservices_SpringBoot/section6/v2-springCloud&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.37471265&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/configServer/src/main/resources/config\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Application.AccountsApplication\">\n    <configuration name=\"AccountsApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"ALTERNATIVE_JRE_PATH\" value=\"17\" />\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"true\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.eazybytes.accounts.AccountsApplication\" />\n      <module name=\"accounts\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.eazybytes.accounts.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"CardsApplication\" type=\"Application\" factoryName=\"Application\" nameIsGenerated=\"true\">\n      <option name=\"ALTERNATIVE_JRE_PATH\" value=\"17\" />\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"true\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.microservice.Cards.CardsApplication\" />\n      <module name=\"cards\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.microservice.Cards.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"ConfigServerApplication\" type=\"Application\" factoryName=\"Application\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.mybank.configServer.ConfigServerApplication\" />\n      <module name=\"configserver\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.mybank.configServer.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"LoansApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"ALTERNATIVE_JRE_PATH\" value=\"17\" />\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"true\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.microservice.Loans.LoansApplication\" />\n      <module name=\"loans\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.microservice.Loans.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <list>\n      <item itemvalue=\"Application.CardsApplication\" />\n      <item itemvalue=\"Application.ConfigServerApplication\" />\n      <item itemvalue=\"Application.AccountsApplication\" />\n      <item itemvalue=\"Application.LoansApplication\" />\n    </list>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.LoansApplication\" />\n        <item itemvalue=\"Application.AccountsApplication\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"b22bf2b5-44ca-46ca-b4b5-3bde9b0a7db9\" name=\"Changes\" comment=\"\" />\n      <created>1725806687772</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1725806687772</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Spring clou configServer\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1725813528157</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1725813528157</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Spring cloud configServer configured perfectly\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1725900367267</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1725900367267</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Spring cloud configuration with all microservices\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1725907033623</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1725907033623</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"SpringCloud - accessing all the config files from git repo and config path\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1725925192893</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1725925192893</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Actuator set up\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1725931618202</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1725931618202</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"Change JDK version to 17\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1725934464582</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1725934464582</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"verbose changes\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1725936112511</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1725936112511</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"verbose changes\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1725937964300</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1725937964301</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"verbose changes c\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1725938149646</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1725938149646</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"verbose changes c\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1725938446613</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1725938446613</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"SpringCloud Bus- RabbitMQ\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1725939981690</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1725939981691</updated>\n    </task>\n    <task id=\"LOCAL-00012\" summary=\"Add Dependencies for cloud actuator with rabbitMQ for message Broker functionality\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1725940761951</created>\n      <option name=\"number\" value=\"00012\" />\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1725940761951</updated>\n    </task>\n    <task id=\"LOCAL-00013\" summary=\"Webhook from github for production ready scenario\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1726071475808</created>\n      <option name=\"number\" value=\"00013\" />\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1726071475808</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"14\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n    <MESSAGE value=\"Spring cloud\" />\n    <MESSAGE value=\"Spring clou configServer\" />\n    <MESSAGE value=\"Spring cloud configServer configured perfectly\" />\n    <MESSAGE value=\"Spring cloud configuration with all microservices\" />\n    <MESSAGE value=\"SpringCloud - accessing all the config files from git repo and config path\" />\n    <MESSAGE value=\"Actuator set up\" />\n    <MESSAGE value=\"Change JDK version to 17\" />\n    <MESSAGE value=\"verbose changes\" />\n    <MESSAGE value=\"verbose changes c\" />\n    <MESSAGE value=\"SpringCloud Bus- RabbitMQ\" />\n    <MESSAGE value=\"Add Dependencies for cloud actuator with rabbitMQ for message Broker functionality\" />\n    <MESSAGE value=\"Webhook from github for production ready scenario\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Webhook from github for production ready scenario\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/v2-springCloud/.idea/workspace.xml b/v2-springCloud/.idea/workspace.xml
+--- a/v2-springCloud/.idea/workspace.xml	(revision 57168f890e5c35c31e446b68ed642529d4b7dc08)
++++ b/v2-springCloud/.idea/workspace.xml	(date 1726079784543)
+@@ -5,7 +5,11 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="b22bf2b5-44ca-46ca-b4b5-3bde9b0a7db9" name="Changes" comment="Webhook from github for production ready scenario">
++      <change afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+Index: v2-springCloud/docker-compose/default/common-config.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/v2-springCloud/docker-compose/default/common-config.yml b/v2-springCloud/docker-compose/default/common-config.yml
+new file mode 100644
+--- /dev/null	(date 1726078946506)
++++ b/v2-springCloud/docker-compose/default/common-config.yml	(date 1726078946506)
+@@ -0,0 +1,21 @@
++services:
++  network-deploy-service:
++    networks:
++      - prats39
++
++  microservice-base-config:
++    extends:
++      service: network-deploy-service
++    deploy:
++      resources:
++        limits:
++          memory: 700m
++    environment:
++      SPRING_RABBITMQ_HOST: "rabbit"
++
++  microservice-configserver-config:
++    extends:
++      service: microservice-base-config
++    environment:
++      SPRING_PROFILES_ACTIVE: default
++      SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
+Index: v2-springCloud/docker-compose/default/docker-compose.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>services:\n  rabbit:\n    image: rabbitmq:3.13-management\n    hostname: rabbitmq\n    ports:\n      - \"5672:5672\"\n      - \"15672:15672\"\n    healthcheck:\n      test: rabbitmq-diagnostics check_port_connectivity\n      interval: 10s\n      timeout: 5s\n      retries: 10\n      start_period: 5s\n    networks:\n      prats39\n  configserver:\n    image: \"prats39/configserver:s6\"\n    container_name: configserver-microservice\n    ports:\n      - \"8071:8071\"\n    depends_on:\n      rabbit:\n        condition: service_healthy\n    healthcheck:\n      test: \"curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1\"\n      interval: 10s\n      timeout: 5s\n      retries: 10\n      start_period: 10s\n    deploy:\n      resources:\n        limits:\n          memory: 700m\n    networks:\n      - prats39\n\n  accounts:\n    image: \"prats39/accounts:s6\"\n    container_name: accounts-microservice\n    ports:\n      - \"8081:8081\"\n    depends_on:\n      configserver:\n        condition: service_healthy\n    deploy:\n      resources:\n        limits:\n          memory: 700m\n    networks:\n      - prats39\n    environment:\n      SPRING_APPLICATION_NAME: \"accounts\"\n      SPRING_CONFIG_IMPORT: \"configserver:http://localhost:8071/\"\n      SPRING_PROFILES_ACTIVE: default\n\n  loans:\n    image: \"prats39/loans:s6\"\n    container_name: loans-microservice\n    ports:\n      - \"8091:8091\"\n    depends_on:\n      configserver:\n        condition: service_healthy\n    deploy:\n      resources:\n        limits:\n          memory: 700m\n    networks:\n      - prats39\n    environment:\n      SPRING_APPLICATION_NAME: \"accounts\"\n      SPRING_CONFIG_IMPORT: \"configserver:http://localhost:8071/\"\n      SPRING_PROFILES_ACTIVE: default\n\n  cards:\n    image: \"prats39/cards:s6\"\n    container_name: cards-microservice\n    ports:\n      - \"9000:9000\"\n    depends_on:\n      configserver:\n        condition: service_healthy\n    deploy:\n      resources:\n        limits:\n          memory: 700m\n    networks:\n      - prats39\n    environment:\n      SPRING_APPLICATION_NAME: \"accounts\"\n      SPRING_CONFIG_IMPORT: \"configserver:http://localhost:8071/\"\n      SPRING_PROFILES_ACTIVE: default\n\nnetworks:\n  prats39:\n    driver: \"bridge\"
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/v2-springCloud/docker-compose/default/docker-compose.yml b/v2-springCloud/docker-compose/default/docker-compose.yml
+--- a/v2-springCloud/docker-compose/default/docker-compose.yml	(revision 57168f890e5c35c31e446b68ed642529d4b7dc08)
++++ b/v2-springCloud/docker-compose/default/docker-compose.yml	(date 1726079074583)
+@@ -11,8 +11,10 @@
+       timeout: 5s
+       retries: 10
+       start_period: 5s
+-    networks:
+-      prats39
++    extends:
++      file: common-config.yml
++      service: network-deploy-service
++
+   configserver:
+     image: "prats39/configserver:s6"
+     container_name: configserver-microservice
+@@ -27,12 +29,9 @@
+       timeout: 5s
+       retries: 10
+       start_period: 10s
+-    deploy:
+-      resources:
+-        limits:
+-          memory: 700m
+-    networks:
+-      - prats39
++    extends:
++      file: common-config.yml
++      service: microservice-base-config
+ 
+   accounts:
+     image: "prats39/accounts:s6"
+@@ -42,16 +41,11 @@
+     depends_on:
+       configserver:
+         condition: service_healthy
+-    deploy:
+-      resources:
+-        limits:
+-          memory: 700m
+-    networks:
+-      - prats39
+     environment:
+       SPRING_APPLICATION_NAME: "accounts"
+-      SPRING_CONFIG_IMPORT: "configserver:http://localhost:8071/"
+-      SPRING_PROFILES_ACTIVE: default
++      extends:
++        file: common-config.yml
++        service: microservice-configserver-config
+ 
+   loans:
+     image: "prats39/loans:s6"
+@@ -61,16 +55,11 @@
+     depends_on:
+       configserver:
+         condition: service_healthy
+-    deploy:
+-      resources:
+-        limits:
+-          memory: 700m
+-    networks:
+-      - prats39
+     environment:
+-      SPRING_APPLICATION_NAME: "accounts"
+-      SPRING_CONFIG_IMPORT: "configserver:http://localhost:8071/"
+-      SPRING_PROFILES_ACTIVE: default
++      SPRING_APPLICATION_NAME: "loans"
++      extends:
++        file: common-config.yml
++        service: microservice-configserver-config
+ 
+   cards:
+     image: "prats39/cards:s6"
+@@ -80,16 +69,11 @@
+     depends_on:
+       configserver:
+         condition: service_healthy
+-    deploy:
+-      resources:
+-        limits:
+-          memory: 700m
+-    networks:
+-      - prats39
+     environment:
+-      SPRING_APPLICATION_NAME: "accounts"
+-      SPRING_CONFIG_IMPORT: "configserver:http://localhost:8071/"
+-      SPRING_PROFILES_ACTIVE: default
++      SPRING_APPLICATION_NAME: "cards"
++      extends:
++        file: common-config.yml
++        service: microservice-configserver-config
+ 
+ networks:
+   prats39:
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"63db4be5-0cad-40af-b997-ac469ae5093a\" name=\"Changes\" comment=\"rabbitMQ with Liveness and readiness\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/v2-springCloud/docker-compose/default/docker-compose.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/v2-springCloud/docker-compose/default/docker-compose.yml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\n  </component>\n  <component name=\"ProjectColorInfo\"><![CDATA[{\n  \"associatedIndex\": 7\n}]]></component>\n  <component name=\"ProjectId\" id=\"2lvuBGN8i2H8DT1dAELcvf9bhcr\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\n    \"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"Application.AccountsApplication.executor\": \"Run\",\n    \"Application.CardsApplication.executor\": \"Run\",\n    \"Application.ConfigServerApplication.executor\": \"Run\",\n    \"Application.LoansApplication.executor\": \"Run\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"last_opened_file_path\": \"/Users/pratikpatel/Documents/SpringBoot_Projects/microservices_SpringBoot/section6\"\n  }\n}]]></component>\n  <component name=\"RunManager\" selected=\"Application.LoansApplication\">\n    <configuration name=\"AccountsApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.eazybytes.accounts.AccountsApplication\" />\n      <module name=\"accounts (1)\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.eazybytes.accounts.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"CardsApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.microservice.Cards.CardsApplication\" />\n      <module name=\"cards (1)\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.microservice.Cards.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"ConfigServerApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.mybank.configServer.ConfigServerApplication\" />\n      <module name=\"configserver\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.mybank.configServer.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"LoansApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.microservice.Loans.LoansApplication\" />\n      <module name=\"loans (1)\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.microservice.Loans.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.LoansApplication\" />\n        <item itemvalue=\"Application.CardsApplication\" />\n        <item itemvalue=\"Application.AccountsApplication\" />\n        <item itemvalue=\"Application.ConfigServerApplication\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"63db4be5-0cad-40af-b997-ac469ae5093a\" name=\"Changes\" comment=\"\" />\n      <created>1726072733740</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1726072733740</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"new docker-compose file added\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1726074464065</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1726074464065</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"rabbitMQ with Liveness and readiness\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1726077071223</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1726077071223</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n    <MESSAGE value=\"new docker-compose file added\" />\n    <MESSAGE value=\"rabbitMQ with Liveness and readiness\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"rabbitMQ with Liveness and readiness\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 57168f890e5c35c31e446b68ed642529d4b7dc08)
++++ b/.idea/workspace.xml	(date 1726079784543)
+@@ -4,8 +4,12 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="63db4be5-0cad-40af-b997-ac469ae5093a" name="Changes" comment="rabbitMQ with Liveness and readiness">
++    <list default="true" id="63db4be5-0cad-40af-b997-ac469ae5093a" name="Changes" comment="rabbitMQ with configure with config server">
++      <change afterPath="$PROJECT_DIR$/v2-springCloud/docker-compose/default/common-config.yml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/v2-springCloud/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/v2-springCloud/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/v2-springCloud/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/v2-springCloud/accounts/pom.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/v2-springCloud/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/v2-springCloud/configserver/pom.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/v2-springCloud/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/v2-springCloud/docker-compose/default/docker-compose.yml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -128,13 +132,22 @@
+       <option name="project" value="LOCAL" />
+       <updated>1726077071223</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="rabbitMQ with configure with config server">
++      <option name="closed" value="true" />
++      <created>1726077991883</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1726077991883</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+     <MESSAGE value="new docker-compose file added" />
+     <MESSAGE value="rabbitMQ with Liveness and readiness" />
+-    <option name="LAST_COMMIT_MESSAGE" value="rabbitMQ with Liveness and readiness" />
++    <MESSAGE value="rabbitMQ with configure with config server" />
++    <option name="LAST_COMMIT_MESSAGE" value="rabbitMQ with configure with config server" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: v2-springCloud/configserver/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n\txsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd\">\n\t<modelVersion>4.0.0</modelVersion>\n\t<parent>\n\t\t<groupId>org.springframework.boot</groupId>\n\t\t<artifactId>spring-boot-starter-parent</artifactId>\n\t\t<version>3.3.3</version>\n\t\t<relativePath/> <!-- lookup parent from repository -->\n\t</parent>\n\t<groupId>com.mybank</groupId>\n\t<artifactId>configserver</artifactId>\n\t<version>0.0.1-SNAPSHOT</version>\n\t<name>configServer</name>\n\t<description>configServer for myBank microservices</description>\n\t<url/>\n\t<licenses>\n\t\t<license/>\n\t</licenses>\n\t<developers>\n\t\t<developer/>\n\t</developers>\n\t<scm>\n\t\t<connection/>\n\t\t<developerConnection/>\n\t\t<tag/>\n\t\t<url/>\n\t</scm>\n\t<properties>\n\t\t<java.version>17</java.version>\n\t\t<spring-cloud.version>2023.0.3</spring-cloud.version>\n\t</properties>\n\t<dependencies>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t<artifactId>spring-boot-starter-actuator</artifactId>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.cloud</groupId>\n\t\t\t<artifactId>spring-cloud-config-server</artifactId>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t<artifactId>spring-boot-starter-actuator</artifactId>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.cloud</groupId>\n\t\t\t<artifactId>spring-cloud-starter-bus-amqp</artifactId> <!-- or spring-cloud-starter-bus-kafka -->\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.cloud</groupId>\n\t\t\t<artifactId>spring-cloud-config-monitor</artifactId>\n\t\t</dependency>\n\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t<artifactId>spring-boot-starter-test</artifactId>\n\t\t\t<scope>test</scope>\n\t\t</dependency>\n\t</dependencies>\n\t<dependencyManagement>\n\t\t<dependencies>\n\t\t\t<dependency>\n\t\t\t\t<groupId>org.springframework.cloud</groupId>\n\t\t\t\t<artifactId>spring-cloud-dependencies</artifactId>\n\t\t\t\t<version>${spring-cloud.version}</version>\n\t\t\t\t<type>pom</type>\n\t\t\t\t<scope>import</scope>\n\t\t\t</dependency>\n\t\t</dependencies>\n\t</dependencyManagement>\n\n\t<build>\n\t\t<plugins>\n\t\t\t<plugin>\n\t\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t\t<artifactId>spring-boot-maven-plugin</artifactId>\n\t\t\t</plugin>\n\t\t</plugins>\n\t</build>\n\n</project>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/v2-springCloud/configserver/pom.xml b/v2-springCloud/configserver/pom.xml
+--- a/v2-springCloud/configserver/pom.xml	(revision 57168f890e5c35c31e446b68ed642529d4b7dc08)
++++ b/v2-springCloud/configserver/pom.xml	(date 1726079627517)
+@@ -76,6 +76,16 @@
+ 				<groupId>org.springframework.boot</groupId>
+ 				<artifactId>spring-boot-maven-plugin</artifactId>
+ 			</plugin>
++			<plugin>
++				<groupId>com.google.cloud.tools</groupId>
++				<artifactId>jib-maven-plugin</artifactId>
++				<version>3.4.3</version>
++				<configuration>
++					<to>
++						<image>${project.artifactId}:s6</image>
++					</to>
++				</configuration>
++			</plugin>
+ 		</plugins>
+ 	</build>
+ 
