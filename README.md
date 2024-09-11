@@ -101,3 +101,6 @@ v
 <img src="sw4.png" alt="image"/>
 <img src="sw5.png" alt="image"/>
 
+# Docker Images for microservices to the Docker Hub 
+<img src= "Docker_images_dockerRepo.png" alt="dockerHub" />
+
