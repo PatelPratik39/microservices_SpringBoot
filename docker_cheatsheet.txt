@@ -1,0 +1,51 @@
+
+Docker Command Cheat Sheet
+
+1. Docker Images:
+   - List images: `docker images`
+   - Pull an image: `docker pull <image_name>:<tag>`
+   - Build an image: `docker build -t <image_name>:<tag> <path_to_dockerfile>`
+   - Remove an image: `docker rmi <image_name>:<tag>`
+   - Tag an image: `docker tag <image_name>:<new_tag>`
+   - Push an image: `docker push <image_name>:<tag>`
+
+2. Docker Containers:
+   - List running containers: `docker ps`
+   - List all containers: `docker ps -a`
+   - Run a container interactively: `docker run -it <image_name>`
+   - Run a container in detached mode: `docker run -d <image_name>`
+   - Run a container with port mapping: `docker run -p <host_port>:<container_port> <image_name>`
+   - Start an existing container: `docker start <container_id_or_name>`
+   - Stop a running container: `docker stop <container_id_or_name>`
+   - Remove a container: `docker rm <container_id_or_name>`
+   - Remove a container forcefully: `docker rm -f <container_id_or_name>`
+   - Rename a container: `docker rename <old_name> <new_name>`
+
+3. Docker Networks:
+   - List all networks: `docker network ls`
+   - Create a new network: `docker network create <network_name>`
+   - Inspect a network: `docker network inspect <network_name>`
+   - Remove a network: `docker network rm <network_name>`
+   - Connect a container to a network: `docker network connect <network_name> <container_name>`
+   - Disconnect a container from a network: `docker network disconnect <network_name> <container_name>`
+
+4. Docker Volumes:
+   - List all volumes: `docker volume ls`
+   - Create a volume: `docker volume create <volume_name>`
+   - Inspect a volume: `docker volume inspect <volume_name>`
+   - Remove a volume: `docker volume rm <volume_name>`
+   - Mount a volume in a container: `docker run -v <volume_name>:/path/in/container <image_name>`
+
+5. Container Logs:
+   - View container logs: `docker logs <container_id_or_name>`
+   - Follow container logs (real-time): `docker logs -f <container_id_or_name>`
+
+6. Other Useful Commands:
+   - Display system-wide information: `docker info`
+   - Display Docker version: `docker version`
+   - View container stats (CPU/memory usage): `docker stats`
+   - Clean up unused images, containers, volumes, and networks: `docker system prune`
+   - Copy files between container and host:
+     - Host to container: `docker cp <host_path> <container_id>:/<path_in_container>`
+     - Container to host: `docker cp <container_id>:/<path_in_container> <host_path>`
+   - Execute a command inside a running container: `docker exec -it <container_id_or_name> <command>`
