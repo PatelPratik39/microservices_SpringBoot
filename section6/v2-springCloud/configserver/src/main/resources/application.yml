@@ -12,21 +12,26 @@ spring:
           timeout: 5
           clone-on-start: true
           force-pull: true
-          search-paths: "section6/v2-springCloud/configserver/src/main/resources/config"
+          search-path: "section6/v2-springCloud/configserver/src/main/resources/config"
   rabbitmq:
     host: "localhost"
     port: 5672
     username: "guest"
     password: "guest"
-#  Actuator set up
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+  health:
+    probes:
+      enabled: true
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
+
 encrypt:
   key: "94AGXER3CU8ECNAKEKDC00L4F"
 server:
   port: 8071
-
-
