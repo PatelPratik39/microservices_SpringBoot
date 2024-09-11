@@ -41,11 +41,11 @@ services:
     depends_on:
       configserver:
         condition: service_healthy
+    extends:
+      file: common-config.yml
+      service: microservice-configserver-config
     environment:
       SPRING_APPLICATION_NAME: "accounts"
-      extends:
-        file: common-config.yml
-        service: microservice-configserver-config
 
   loans:
     image: "prats39/loans:s6"
@@ -55,11 +55,11 @@ services:
     depends_on:
       configserver:
         condition: service_healthy
+    extends:
+      file: common-config.yml
+      service: microservice-configserver-config
     environment:
       SPRING_APPLICATION_NAME: "loans"
-      extends:
-        file: common-config.yml
-        service: microservice-configserver-config
 
   cards:
     image: "prats39/cards:s6"
@@ -69,11 +69,11 @@ services:
     depends_on:
       configserver:
         condition: service_healthy
+    extends:
+      file: common-config.yml
+      service: microservice-configserver-config
     environment:
       SPRING_APPLICATION_NAME: "cards"
-      extends:
-        file: common-config.yml
-        service: microservice-configserver-config
 
 networks:
   prats39:
