@@ -3,6 +3,19 @@ services:
     networks:
       - prats39
 
+  microservice-db-config:
+    extends:
+      service: network-deploy-service
+      image: mysql
+      healthcheck:
+        test: [ "CMD", "mysqladmin", "ping", "-h", "127.0.0.1" ]
+        timeout: 10s
+        retries: 10
+        interval: 10s
+        start_period: 10s
+      environment:
+        MYSQL_ROOT_PASSWORD: root
+
   microservice-base-config:
     extends:
       service: network-deploy-service
@@ -16,6 +29,11 @@ services:
   microservice-configserver-config:
     extends:
       service: microservice-base-config
+    depends_on:
+      configserver:
+        condition: service_healthy
     environment:
       SPRING_PROFILES_ACTIVE: qa
       SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root

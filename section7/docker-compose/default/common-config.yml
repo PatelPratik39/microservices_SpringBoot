@@ -6,7 +6,7 @@ services:
   microservice-db-config:
     extends:
       service: network-deploy-service
-#      image: mysql
+      image: mysql
       healthcheck:
         test: [ "CMD", "mysqladmin", "ping", "-h", "127.0.0.1" ]
         timeout: 10s
