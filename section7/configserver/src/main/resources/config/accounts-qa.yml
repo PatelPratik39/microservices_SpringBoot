@@ -1,0 +1,12 @@
+
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to the Prats Banking App using Java Spring boot microservice - QA APIS"
+  contactDetails:
+    name: "Lallu Lal - QA Lead"
+    email: "lallu@email.com"
+  onCallSupport:
+    - "(123)4567890"
+    - "(999)8883434"

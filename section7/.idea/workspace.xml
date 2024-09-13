@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63db4be5-0cad-40af-b997-ac469ae5093a" name="Changes" comment="docker-compose file for PROD and QA">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c8cb32ae-1a5b-4e72-9760-f2cebdd4deb9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../section6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../section6/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,14 +14,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2lvuBGN8i2H8DT1dAELcvf9bhcr" />
+  <component name="ProjectId" id="2lyYR5G3c0xKLwBDUXVgnucqeZi" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -39,19 +38,18 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/pratikpatel/Documents/SpringBoot_Projects/microservices_SpringBoot/section6/v2-springCloud/docker-compose/qa&quot;
+    &quot;last_opened_file_path&quot;: &quot;/Users/pratikpatel/Documents/SpringBoot_Projects/microservices_SpringBoot/section7&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.37471265&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/v2-springCloud/docker-compose/qa" />
-      <recent name="$PROJECT_DIR$/v2-springCloud/docker-compose/prod" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.LoansApplication">
+  <component name="RunManager" selected="Application.CardsApplication">
     <configuration name="AccountsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.eazybytes.accounts.AccountsApplication" />
-      <module name="accounts (1)" />
+      <module name="accounts" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.eazybytes.accounts.*" />
@@ -64,7 +62,7 @@
     </configuration>
     <configuration name="CardsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.microservice.Cards.CardsApplication" />
-      <module name="cards (1)" />
+      <module name="cards" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.microservice.Cards.*" />
@@ -89,8 +87,10 @@
       </method>
     </configuration>
     <configuration name="LoansApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.microservice.Loans.LoansApplication" />
-      <module name="loans (1)" />
+      <module name="loans" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.microservice.Loans.*" />
@@ -101,11 +101,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.AccountsApplication" />
+      <item itemvalue="Application.CardsApplication" />
+      <item itemvalue="Application.ConfigServerApplication" />
+      <item itemvalue="Application.LoansApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LoansApplication" />
         <item itemvalue="Application.CardsApplication" />
         <item itemvalue="Application.AccountsApplication" />
+        <item itemvalue="Application.LoansApplication" />
         <item itemvalue="Application.ConfigServerApplication" />
       </list>
     </recent_temporary>
@@ -113,77 +119,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="63db4be5-0cad-40af-b997-ac469ae5093a" name="Changes" comment="" />
-      <created>1726072733740</created>
+      <changelist id="c8cb32ae-1a5b-4e72-9760-f2cebdd4deb9" name="Changes" comment="" />
+      <created>1726153772132</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1726072733740</updated>
+      <updated>1726153772132</updated>
     </task>
-    <task id="LOCAL-00001" summary="new docker-compose file added">
-      <option name="closed" value="true" />
-      <created>1726074464065</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1726074464065</updated>
-    </task>
-    <task id="LOCAL-00002" summary="rabbitMQ with Liveness and readiness">
-      <option name="closed" value="true" />
-      <created>1726077071223</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1726077071223</updated>
-    </task>
-    <task id="LOCAL-00003" summary="docker-compose file">
-      <option name="closed" value="true" />
-      <created>1726082222465</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1726082222465</updated>
-    </task>
-    <task id="LOCAL-00004" summary="docker-compose file">
-      <option name="closed" value="true" />
-      <created>1726082269587</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1726082269587</updated>
-    </task>
-    <task id="LOCAL-00005" summary="docker-compose file">
-      <option name="closed" value="true" />
-      <created>1726082476240</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1726082476240</updated>
-    </task>
-    <task id="LOCAL-00006" summary="docker-compose file">
-      <option name="closed" value="true" />
-      <created>1726084103747</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1726084103747</updated>
-    </task>
-    <task id="LOCAL-00007" summary="docker-compose file for PROD and QA">
-      <option name="closed" value="true" />
-      <created>1726152238008</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1726152238008</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new docker-compose file added" />
-    <MESSAGE value="rabbitMQ with Liveness and readiness" />
-    <MESSAGE value="docker-compose file" />
-    <MESSAGE value="docker-compose file for PROD and QA" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker-compose file for PROD and QA" />
   </component>
 </project>
