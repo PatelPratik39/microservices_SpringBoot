@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8cb32ae-1a5b-4e72-9760-f2cebdd4deb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../section6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../section6/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c8cb32ae-1a5b-4e72-9760-f2cebdd4deb9" name="Changes" comment="Changed the Tag inside pom.xml files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,9 +128,21 @@
       <option name="presentableId" value="Default" />
       <updated>1726153772132</updated>
     </task>
+    <task id="LOCAL-00001" summary="configured MySQL Database with App">
+      <option name="closed" value="true" />
+      <created>1726187559562</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726187559562</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="configured MySQL Database with App" />
+    <MESSAGE value="Changed the Tag inside pom.xml files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the Tag inside pom.xml files" />
   </component>
 </project>
