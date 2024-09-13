@@ -16,6 +16,11 @@ services:
   microservice-configserver-config:
     extends:
       service: microservice-base-config
+    depends_on:
+      configserver:
+        condition: service_healthy
     environment:
       SPRING_PROFILES_ACTIVE: default
       SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
+      SPRING_DATASOURCE_USERNAME: root
+      SPRINT_DATASOURCE_PASSWORD: root
