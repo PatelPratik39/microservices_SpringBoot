@@ -19,64 +19,43 @@ services:
     container_name: accountsdb
     ports:
       - 3306:3306
-    healthcheck:
-      test: ["CMD","mysqladmin","ping","-h","localhost"]
-      timeout: 10s
-      retries: 10
-      interval: 10s
-      start_period: 10s
     environment:
-      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: accountsdb
-      SPRING_DATASOURCE_URL: "jdbc:mysql://localhost:3306/accountsdb"
+      MYSQL_ROOT_PASSWORD: root
     extends:
       file: common-config.yml
-      service: network-deploy-service
+      service: microservice-db-config
 
   loansdb:
     image: mysql
     container_name: loansdb
     ports:
       - 3307:3306
-    healthcheck:
-      test: [ "CMD","mysqladmin","ping","-h","localhost" ]
-      timeout: 10s
-      retries: 10
-      interval: 10s
-      start_period: 10s
     environment:
-      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: loansdb
     extends:
       file: common-config.yml
-      service: network-deploy-service
+      service: microservice-db-config
 
   cardsdb:
     image: mysql
     container_name: cardsdb
     ports:
       - 3308:3306
-    healthcheck:
-      test: [ "CMD","mysqladmin","ping","-h","localhost" ]
-      timeout: 10s
-      retries: 10
-      interval: 10s
-      start_period: 10s
     environment:
-      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: cardsdb
     extends:
       file: common-config.yml
-      service: network-deploy-service
+      service: microservice-db-config
 
   configserver:
-    image: "prats39/configserver:s6"
+    image: "prats39/configserver:s7"
     container_name: configserver-microservice
     ports:
       - "8071:8071"
-    depends_on:
-      rabbit:
-        condition: service_healthy
+#    depends_on:
+#      rabbit:
+#        condition: service_healthy
     healthcheck:
       test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
       interval: 10s
@@ -88,27 +67,27 @@ services:
       service: microservice-base-config
 
   accounts:
-    image: "prats39/accounts:s6"
+    image: "prats39/accounts:s7"
     container_name: accounts-microservice
     ports:
       - "8081:8081"
     depends_on:
-      configserver:
+      accountsdb:
         condition: service_healthy
-    extends:
-      file: common-config.yml
-      service: microservice-configserver-config
     environment:
       SPRING_APPLICATION_NAME: "accounts"
       SPRING_DATASOURCE_URL: "jdbc:mysql://accountsdb:3306/accountsdb"
+    networks:
+      - prats39
+
 
   loans:
-    image: "prats39/loans:s6"
+    image: "prats39/loans:s7"
     container_name: loans-microservice
     ports:
       - "8091:8091"
     depends_on:
-      configserver:
+      loansdb:
         condition: service_healthy
     extends:
       file: common-config.yml
@@ -118,16 +97,13 @@ services:
       SPRING_DATASOURCE_URL: "jdbc:mysql://loansdb:3307/loansdb"
 
   cards:
-    image: "prats39/cards:s6"
+    image: prats39/cards:s7  # Ensure this is the correct image or change it if necessary
     container_name: cards-microservice
     ports:
       - "9000:9000"
     depends_on:
-      configserver:
+      cardsdb:
         condition: service_healthy
-    extends:
-      file: common-config.yml
-      service: microservice-configserver-config
     environment:
       SPRING_APPLICATION_NAME: "cards"
       SPRING_DATASOURCE_URL: "jdbc:mysql://cardsdb:3308/cardsdb"

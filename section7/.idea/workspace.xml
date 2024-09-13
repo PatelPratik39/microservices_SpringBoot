@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8cb32ae-1a5b-4e72-9760-f2cebdd4deb9" name="Changes" comment="Changed the Tag inside pom.xml files">
+    <list default="true" id="c8cb32ae-1a5b-4e72-9760-f2cebdd4deb9" name="Changes" comment="environment variable links from docker to a microservice with mysql database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
@@ -142,13 +142,22 @@
       <option name="project" value="LOCAL" />
       <updated>1726188059497</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="environment variable links from docker to a microservice with mysql database">
+      <option name="closed" value="true" />
+      <created>1726189492230</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726189492230</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="configured MySQL Database with App" />
     <MESSAGE value="Changed the Tag inside pom.xml files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the Tag inside pom.xml files" />
+    <MESSAGE value="environment variable links from docker to a microservice with mysql database" />
+    <option name="LAST_COMMIT_MESSAGE" value="environment variable links from docker to a microservice with mysql database" />
   </component>
 </project>
