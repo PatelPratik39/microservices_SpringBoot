@@ -25,6 +25,10 @@ management:
       enabled: true
     readinessstate:
       enabled: true
+    endpoint:
+      health:
+        probes:
+          enabled: true
 
 encrypt:
   key: "94AGXER3CU8ECNAKEKDC00L4F"
