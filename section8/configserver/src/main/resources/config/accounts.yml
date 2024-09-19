@@ -1,0 +1,10 @@
+build:
+  version: "3.0"
+accounts:
+  message: "Welcome to the Prats Banking App using Java Spring boot microservice"
+  contactDetails:
+    name: "Prats - Developer"
+    email: "prats@email.com"
+  onCallSupport:
+    - "(123)4567890"
+    - "(999)8883434"
