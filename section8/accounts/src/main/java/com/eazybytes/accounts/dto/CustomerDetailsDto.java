@@ -1,7 +1,6 @@
 package com.eazybytes.accounts.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
@@ -10,10 +9,10 @@ import lombok.Data;
 
 @Data
 @Schema(
-        name = "Customer",
-        description = "Schema to hold Customer and Account information"
+        name = "CustomeDetailsr",
+        description = "Schema to hold Customer, Account,Cards, Loans information"
 )
-public class CustomerDto {
+public class CustomerDetailsDto {
 
     @Schema(
             description = "Name of The Customer" , example = "Chucha Singh"
@@ -39,4 +38,16 @@ public class CustomerDto {
             description = "Account details of the Customer"
     )
     private AccountsDto accountsDto;
+
+    @Schema(
+            description = "Loans details of the Customer"
+    )
+    private LoanDto loansDto;
+
+    @Schema(
+            description = "Cards details of the Customer"
+    )
+    private CardsDto cardsDto;
+
+
 }
