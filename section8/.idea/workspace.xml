@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fd7093b-0f75-4a6c-88a2-e60e3886acc6" name="Changes" comment="EurekaServer with microservices">
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/client/CardsFeignClient.java" afterDir="false" />
+    <list default="true" id="6fd7093b-0f75-4a6c-88a2-e60e3886acc6" name="Changes" comment="FiegnClient Dependency configured to accounts microservice">
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/client/LoansFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/AccountsApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +94,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.eazybytes.accounts.service.client" />
+      <recent name="com.eazybytes.accounts.dto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -203,7 +205,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726768734080</updated>
       <workItem from="1728332575396" duration="5744000" />
-      <workItem from="1728355057685" duration="6428000" />
+      <workItem from="1728355057685" duration="6890000" />
     </task>
     <task id="LOCAL-00001" summary="Eureks Server microservice">
       <option name="closed" value="true" />
@@ -277,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728360406610</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="FiegnClient Dependency configured to accounts microservice">
+      <option name="closed" value="true" />
+      <created>1728362196708</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728362196708</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +303,7 @@
     <MESSAGE value="try to fix bug" />
     <MESSAGE value="EurekaServer is configured and up and running" />
     <MESSAGE value="EurekaServer with microservices" />
-    <option name="LAST_COMMIT_MESSAGE" value="EurekaServer with microservices" />
+    <MESSAGE value="FiegnClient Dependency configured to accounts microservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="FiegnClient Dependency configured to accounts microservice" />
   </component>
 </project>
