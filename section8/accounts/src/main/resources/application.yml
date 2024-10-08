@@ -10,7 +10,6 @@ spring:
     driver-class-name: org.h2.Driver
     username: sa
     password: ''
-    platform: h2
   h2:
     console:
       enabled: true
@@ -21,6 +20,9 @@ spring:
       show-sql: true
   config:
     import: "optional:configserver:http://localhost:8071/"
+  sql:
+    init:
+      platform: h2
 build:
   version: 1.0.0
 #  Actuator set up

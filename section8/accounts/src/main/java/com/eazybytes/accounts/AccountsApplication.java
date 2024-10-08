@@ -38,6 +38,7 @@ public class AccountsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AccountsApplication.class, args);
+		System.err.println("Accounts microservice REST API Documentation");
 	}
 
 }
