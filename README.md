@@ -104,3 +104,6 @@ v
 # Docker Images for microservices to the Docker Hub 
 <img src= "Docker_images_dockerRepo.png" alt="dockerHub" />
 
+#EurekaServer for Microservice
+<img src="EurekaServer1.png" alt="image"/>
+
