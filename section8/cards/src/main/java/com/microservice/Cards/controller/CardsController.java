@@ -33,11 +33,11 @@ import org.springframework.web.bind.annotation.*;
 @Validated
 public class CardsController {
 
-    private CardsService cardsService;
+    private final CardsService cardsService;
 
-//    public CardsController ( CardsService cardsService ) {
-//        this.cardsService = cardsService;
-//    }
+    public CardsController ( CardsService cardsService ) {
+        this.cardsService = cardsService;
+    }
 
     @Value("${build.version}")
     private String buildVersion;

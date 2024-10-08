@@ -34,7 +34,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
 public class AccountsController {
 
-    private AccountService accountService;
+    private final AccountService accountService;
 
     @Value("${build.version}")
     private String buildVersion;
@@ -45,6 +45,9 @@ public class AccountsController {
     @Autowired
     private AccountsContactInfoDto accountsContactInfoDto;
 
+    public AccountsController(AccountService accountService) {
+        this.accountService = accountService;
+    }
 
 
     @Operation(

@@ -35,7 +35,7 @@ import org.springframework.web.bind.annotation.*;
 public class LoanController {
 
 
-    private LoanService loanService;
+    private final LoanService loanService;
 
     public LoanController ( LoanService loanService ) {
         this.loanService = loanService;
@@ -44,10 +44,7 @@ public class LoanController {
     @Value("${build.version}")
     private String buildVersion;
 
-    @Autowired
     private Environment environment;
-
-    @Autowired
     private LoansContactInfoDto loansContactInfoDto;
 
 
