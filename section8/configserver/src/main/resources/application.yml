@@ -14,15 +14,16 @@ spring:
           force-pull: true
           search-path: "section8/configserver/src/main/resources/config"
 
+
 management:
   endpoints:
     web:
       exposure:
         include: "*"
   health:
-    livenessstate:
+    liveness-state:
       enabled: true
-    readinessstate:
+    readiness-state:
       enabled: true
     endpoint:
       health:
