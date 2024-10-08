@@ -6,13 +6,22 @@ spring:
   cloud:
     config:
       server:
-        git:
-          uri: "https://github.com/PatelPratik39/microservices_SpringBoot.git"
-          default-label: main
-          timeout: 5
-          clone-on-start: true
-          force-pull: true
-          search-path: "section8/configserver/src/main/resources/config"
+        uri: "https://github.com/PatelPratik39/microservices_SpringBoot.git"
+        default-label: main
+        search-paths: "section8/"
+#        git:
+#          uri: "https://github.com/PatelPratik39/microservices_SpringBoot.git"
+#          default-label: main
+#          timeout: 5
+#          clone-on-start: true
+#          force-pull: true
+#          search-path: "/"
+
+server:
+  port: 8071
+
+encrypt:
+  key: "94AGXER3CU8ECNAKEKDC00L4F"
 
 management:
   endpoints:
@@ -24,12 +33,3 @@ management:
       enabled: true
     liveness-state:
       enabled: true
-  endpoint:
-    health:
-      probes:
-        enabled: true
-
-encrypt:
-  key: "94AGXER3CU8ECNAKEKDC00L4F"
-server:
-  port: 8071
