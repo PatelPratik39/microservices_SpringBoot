@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fd7093b-0f75-4a6c-88a2-e60e3886acc6" name="Changes" comment="new Eureka Server">
+    <list default="true" id="6fd7093b-0f75-4a6c-88a2-e60e3886acc6" name="Changes" comment="EurekaServer is configured and up and running">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/eurekaserver.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/AccountsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/microservice/Cards/CardsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/microservice/Cards/CardsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/microservice/Loans/LoansApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/microservice/Loans/LoansApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +107,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+  <component name="RunManager" selected="Spring Boot.CardsApplication">
     <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mybank.configServer.ConfigServerApplication" />
       <module name="configserver" />
@@ -172,9 +179,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.LoansApplication" />
         <item itemvalue="Spring Boot.AccountsApplication" />
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Application.ConfigServerApplication" />
       </list>
     </recent_temporary>
@@ -196,7 +203,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726768734080</updated>
       <workItem from="1728332575396" duration="5744000" />
-      <workItem from="1728355057685" duration="3694000" />
+      <workItem from="1728355057685" duration="5044000" />
     </task>
     <task id="LOCAL-00001" summary="Eureks Server microservice">
       <option name="closed" value="true" />
@@ -238,7 +245,31 @@
       <option name="project" value="LOCAL" />
       <updated>1728357519314</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new Eureka Server">
+      <option name="closed" value="true" />
+      <created>1728358962868</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728358962868</updated>
+    </task>
+    <task id="LOCAL-00007" summary="try to fix bug">
+      <option name="closed" value="true" />
+      <created>1728359093231</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728359093231</updated>
+    </task>
+    <task id="LOCAL-00008" summary="EurekaServer is configured and up and running">
+      <option name="closed" value="true" />
+      <created>1728359184104</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728359184104</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +282,8 @@
     <MESSAGE value="Eureksserver.yml" />
     <MESSAGE value="version change" />
     <MESSAGE value="new Eureka Server" />
-    <option name="LAST_COMMIT_MESSAGE" value="new Eureka Server" />
+    <MESSAGE value="try to fix bug" />
+    <MESSAGE value="EurekaServer is configured and up and running" />
+    <option name="LAST_COMMIT_MESSAGE" value="EurekaServer is configured and up and running" />
   </component>
 </project>

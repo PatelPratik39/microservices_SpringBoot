@@ -38,7 +38,7 @@ public class LoansApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LoansApplication.class, args);
-		System.err.println("Loans microservice REST API Documentation");
+		System.err.println("Loans microservice Up and Running");
 	}
 
 }
