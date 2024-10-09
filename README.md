@@ -106,4 +106,6 @@ v
 
 #EurekaServer for Microservice
 <img src="EurekaServer1.png" alt="image"/>
+<img src="2 instances_forLoadBalancing.png" alt="LoadBalancing"/>
+
 
