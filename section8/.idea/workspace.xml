@@ -4,13 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fd7093b-0f75-4a6c-88a2-e60e3886acc6" name="Changes" comment="tag changed from all pom.xml file to s8">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/docker-compose.iml" afterDir="false" />
+    <list default="true" id="6fd7093b-0f75-4a6c-88a2-e60e3886acc6" name="Changes" comment="docker-compose file modification">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/docker-compose.iml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/docker-compose.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/prod/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/common-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/qa/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/qa/common-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,43 +70,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.ConfigServerApplication.executor": "Run",
-    "Application.EurekaserverApplication.executor": "Run",
-    "Maven.configserver [clean].executor": "Run",
-    "Maven.configserver [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AccountsApplication.executor": "Run",
-    "Spring Boot.CardsApplication.executor": "Run",
-    "Spring Boot.ConfigServerApplication.executor": "Run",
-    "Spring Boot.EurekaServerApplication.executor": "Run",
-    "Spring Boot.EurekaserverApplication.executor": "Run",
-    "Spring Boot.LoansApplication.executor": "Run",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/pratikpatel/Documents/SpringBoot_Projects/microservices_SpringBoot/section8",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.configserver [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.configserver [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AccountsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CardsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Run&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/pratikpatel/Documents/SpringBoot_Projects/microservices_SpringBoot/section8&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -189,8 +201,8 @@
       <list>
         <item itemvalue="Spring Boot.LoansApplication" />
         <item itemvalue="Spring Boot.CardsApplication" />
-        <item itemvalue="Spring Boot.AccountsApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Spring Boot.AccountsApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
       </list>
     </recent_temporary>
@@ -213,7 +225,8 @@
       <updated>1726768734080</updated>
       <workItem from="1728332575396" duration="5744000" />
       <workItem from="1728355057685" duration="13796000" />
-      <workItem from="1728406370204" duration="1248000" />
+      <workItem from="1728406370204" duration="5151000" />
+      <workItem from="1728416972299" duration="16833000" />
     </task>
     <task id="LOCAL-00001" summary="Eureks Server microservice">
       <option name="closed" value="true" />
@@ -327,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728405958206</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="docker-compose file modification">
+      <option name="closed" value="true" />
+      <created>1728407939890</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1728407939890</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,6 +379,7 @@
     <MESSAGE value="CustomerDetails and link all microservices to the Accounts microservice" />
     <MESSAGE value="Bug fixes in cards and loans microservice" />
     <MESSAGE value="tag changed from all pom.xml file to s8" />
-    <option name="LAST_COMMIT_MESSAGE" value="tag changed from all pom.xml file to s8" />
+    <MESSAGE value="docker-compose file modification" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker-compose file modification" />
   </component>
 </project>

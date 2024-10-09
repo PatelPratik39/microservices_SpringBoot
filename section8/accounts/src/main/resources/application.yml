@@ -25,6 +25,7 @@ spring:
       platform: h2
 build:
   version: 1.0.0
+
 #  Actuator set up
 management:
   endpoints:
@@ -43,12 +44,12 @@ endpoints:
 
 eureka:
   instance:
-    prefer-ip-address: true
+    preferIpAddress: true
   client:
     fetchRegistry: true
     registerWithEureka: true
     serviceUrl:
-      defaultZone: http://localhost:8070/eureka
+      defaultZone: http://localhost:8070/eureka/
 
 info:
   app:

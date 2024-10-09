@@ -4,6 +4,16 @@ spring:
   config:
     import: "optional:configserver:http://localhost:8071/"
 
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eurekaserver:8070/eureka/
+
+server:
+  port: 8070
+
 management:
   endpoints:
     web:
@@ -18,3 +28,36 @@ management:
     health:
       probes:
         enabled: true
+
+
+#spring:
+#  application:
+#    name: "eurekaserver"
+#  config:
+#    import: "optional:configserver:http://configserver-microservice:8071/"
+#
+#  eureka:
+#    instance:
+#      hostname: eurekaserver-microservice
+#    client:
+#      register-with-eureka: false
+#      fetch-registry: false
+#      service-url:
+#        defaultZone: http://eurekaserver-microservice:8070/eureka/
+#
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#  health:
+#    readiness-state:
+#      enabled: true
+#    liveness-state:
+#      enabled: true
+#  endpoint:
+#    health:
+#      probes:
+#        enabled: true
+
+
